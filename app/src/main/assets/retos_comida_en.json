@@ -1,0 +1,38 @@
+[
+ {
+   "name": "Eat 5 pieces of fruit",
+   "level": 1,
+   "image": "http://weknowyourdreams.com/images/fruit/fruit-01.jpg",
+   "description": "Fruits contain natural sugars and help to maintain your energy and fight your appetite when eaten throughout the day.  An apple contains just 50 cals but three chocolate biscuits could contain 300!"
+ },
+ {
+   "name": "Don't eat any chocolate today!",
+   "level": 2,
+   "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
+   "description": "Chocolate contains lots of sugars and fats and is highly addictive.  Eat an unprocessed snack instead like fruit or some nuts.  If you can't give up choclate, try eating dark chocolate instead."
+ },
+ {
+   "name": "Don't drink any fizzy drinks",
+   "level": 1,
+   "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
+   "description": "Fizzy drinks have an extremely high level of sugars and are extremely damaging to your body.  Try to drink fruit flavoured water or a small amount of fruit juice instead.  Better still just drink water!"
+ },
+ {
+   "name": "Cook your own dinner today",
+   "level": 3,
+   "image": "http://www.healthyeatingaustralia.com/wp-content/uploads/2015/04/healthy-cooking.jpg",
+   "description": "Cooking your own food is important to avoid processed foods which contain high amounts of sugar, salt and flavourings."
+ },
+ {
+   "name": "Don't drink a sugary hot drink",
+   "level": 2,
+   "image": "",
+   "description": "Many drinks sold by coffee chains have as many calories as a single meal - choose the smallest options or better still choose an Americano."
+ },
+ {
+   "name": "Eat a banana instead of a sweet when you snack",
+   "level": 1,
+   "image": "",
+   "description": "The curvy yellow fruits are high in \"potassium and pectin, a form of fiber,\" said Laura Flores, a San Diego-based nutritionist. They can also be a good way to get magnesium and vitamins C and B6."
+ }
+]

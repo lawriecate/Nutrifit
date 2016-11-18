@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "392006180930",
+    "firebase_url": "https://nutrifit-6ffb5.firebaseio.com",
+    "project_id": "nutrifit-6ffb5",
+    "storage_bucket": "nutrifit-6ffb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392006180930:android:65fdecf176b496b4",
+        "android_client_info": {
+          "package_name": "com.lawriecate.apps.nutrifit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392006180930-c3ortcpelhast4t05khpuv4n05vg2kmg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawriecate.apps.nutrifit",
+            "certificate_hash": "8A106E17E90566A64AD0F02FB9C945BF1C2A343A"
+          }
+        },
+        {
+          "client_id": "392006180930-dievi1osmbmqeoos02fn44uji0pqrc6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGUql9dH4wYn8GXWRmZ4TY8gqlsTvGrfM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392006180930-dievi1osmbmqeoos02fn44uji0pqrc6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

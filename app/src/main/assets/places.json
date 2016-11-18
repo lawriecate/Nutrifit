@@ -1,0 +1,23 @@
+{
+  "lugares_ejercicio":[{
+    "place":{
+      "name":"Glorieta Vaqueritos I",
+      "latitude":19.288662,
+      "longitude":-99.119827
+    }},{
+    "place":{
+      "name":"Glorieta Vaqueritos II",
+      "latitude":19.284184,
+      "longitude":-99.125873
+    }},{
+    "place":{
+      "name":"Centro Cultural y Deportivo del ITESM CCM",
+      "latitude":19.285946,
+      "longitude":-99.141558
+    }},{
+    "place":{
+      "name":"Corredor Transmisiones",
+      "latitude":19.288096,
+      "longitude":-99.139968
+    }}]
+}

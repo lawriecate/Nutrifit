@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nutrifit</string>
+    <string name="title_activity_social">Actividad Social</string>
+    <string name="title_activity_login">Registrarse</string>
+    <string name="title_activity_home">Actividad en Casa</string>
+    <string name="title_activity_food_challenge">Reto de Comida</string>
+    <string name="title_activity_fit_challenge">Reto de Ejercicio</string>
+    <string name="sign_out_message">Salir</string>
+    <string name="register_failed">No se pudo registrar su cuenta</string>
+    <string name="prompt_password">Contraseña (opcional)</string>
+    <string name="prompt_email">Correo electrónico</string>
+    <string name="permission_rationale">Permisos de contacto son necesarios para terminar correo electrónico</string>
+    <string name="large_text">Texto grande</string>
+    <string name="error_invalid_password">Contraseña muy corta</string>
+    <string name="error_invalid_email">Correo electrónico no válido</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="auth_failed">Lo siento, tus datos fueron incorrectos</string>
+    <string name="action_sign_up">Crear Cuenta</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="action_sign_in">Registrarse</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="facebook_app_id">1794211550817828</string>
+    <string name="namevideo">Nombre de Vídeo</string>
+    <string name="easy">Fácil</string>
+    <string name="medium">Medio</string>
+    <string name="hard">Díficil</string>
+    <string name="ranking">Puntaje</string>
+    <string name="advance">Progreso</string>
+    <string name="challenges">Retos</string>
+    <string name="currentpoints">Estado de puntaje actual está aquí</string>
+    <string name="home">Inicio</string>
+    <string name="progress">Progreso</string>
+</resources>

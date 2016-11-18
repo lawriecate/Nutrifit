@@ -1,0 +1,94 @@
+{
+  "challenges": [
+
+    {
+      "name": "Jacks",
+      "video": "2g3hyOU9DTY",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 1
+    },
+    {
+      "name": "Flexiones",
+      "video": "B25DldJq2No",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 2
+    },
+    {
+      "name": "Gluteo",
+      "video": "p0nQWTlTQf0",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 3
+    },
+    {
+      "name": "Abs",
+      "video": "P2x_-24-ELA",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 1
+    },
+    {
+      "name": "Squats",
+      "video": "vAnAOXje8aY",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 2
+    },
+    {
+      "name": "Jumping Jacks",
+      "video": "uHYbmThjeZ4",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 3
+    },
+    {
+      "name": "Flex Intermedio",
+      "video": "VKM9jDF-nYM",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 1
+    },
+    {
+      "name": "Burpees",
+      "video": "gGK8HkA0qGw",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 2
+    },
+    {
+      "name": "Yoguis",
+      "video": "5qaIIfGNb9Y",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 3
+    },
+    {
+      "name": "Lunges",
+      "video": "L6EBiCwC1L0",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 1
+    },
+    {
+      "name": "Abs Intermedios",
+      "video": "l09KzDiqPVw",
+      "image": "http://www.just-health.net/images/10416344/image001.jpg",
+      "description": "Description goes here",
+      "perform_no": 5,
+      "level": 2
+    }
+
+  ]
+}
