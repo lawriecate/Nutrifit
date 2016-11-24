@@ -17,24 +17,24 @@ import java.util.List;
 public class DatabaseHandler extends SQLiteOpenHelper {
     // All Static variables
     // Database Version
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     // Database Name
     private static final String DATABASE_NAME = "challengeManager";
 
-    // Contacts table name
     private static final String TABLE_FITNESS_CHALLENGES = "fitness_challenges";
+    private static final String TABLE_FOOD_CHALLENGES = "food_challenges";
     private static final String TABLE_SETTINGS = "user_settings";
 
-    // Contacts Table Columns names
+    // 
     /*
-    private String name;
+   
+      private String name;
     private String description;
     private int level;
     private String image;
-    private String video;
-    private int perform_no;
-    private Boolean completed;*/
+    private Boolean completed;
+    private int id;*/
 
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
@@ -66,6 +66,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + KEY_COMPLETED + " BOOLEAN" +
                 ")";
         db.execSQL(CREATE_FITNESS_CHALLENGE_TABLE);
+        String CREATE_FOOD_CHALLENGE_TABLE = "CREATE TABLE " + TABLE_FOOD_CHALLENGES + "("
+                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
+                + KEY_DESCRIPTION + " TEXT,"
+                + KEY_LEVEL + " INTEGER,"
+                + KEY_IMAGE + " TEXT,"
+                + KEY_COMPLETED + " BOOLEAN" +
+                ")";
+        db.execSQL(CREATE_FOOD_CHALLENGE_TABLE);
 
 
         String CREATE_USER_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "("
@@ -88,6 +96,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_FITNESS_CHALLENGES);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOOD_CHALLENGES);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SETTINGS);
 
         // Create tables again
@@ -278,10 +287,141 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[]{String.valueOf(fitnessChallenge.getId())});
     }
 
+    // Adding new contact
+    public void addFoodChallenge(FoodChallenge foodChallenge) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_NAME, foodChallenge.getName());
+        values.put(KEY_DESCRIPTION, foodChallenge.getDescription());
+        values.put(KEY_LEVEL, foodChallenge.getLevel());
+        values.put(KEY_IMAGE, foodChallenge.getImage());
+
+        values.put(KEY_COMPLETED, foodChallenge.getCompleted());
+
+        // Inserting Row
+        db.insert(TABLE_FOOD_CHALLENGES, null, values);
+        db.close(); // Closing database connection
+        Log.i("DB","Challenge added " + foodChallenge.getName());
+    }
+
+
+    public FoodChallenge getFoodChallenge(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_FOOD_CHALLENGES, new String[] { KEY_ID,
+                        KEY_NAME, KEY_DESCRIPTION, KEY_LEVEL, KEY_IMAGE, KEY_VIDEO, KEY_PERFORM_NO, KEY_COMPLETED }, KEY_ID + "=?",
+                new String[] { String.valueOf(id) }, null, null, null, null);
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        FoodChallenge foodChallenge = new FoodChallenge(
+                Integer.parseInt(cursor.getString(0)),
+                cursor.getString(1),
+                cursor.getString(2),
+                cursor.getInt(3),
+                cursor.getString(4),
+                (cursor.getInt(5)==1)
+        );
+
+        return foodChallenge;
+    }
+
+
+    public List<FoodChallenge> getAllFoodChallenge() {
+        List<FoodChallenge> foodChallengeList = new ArrayList<FoodChallenge>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_FOOD_CHALLENGES;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                FoodChallenge foodChallenge = new FoodChallenge(
+                        Integer.parseInt(cursor.getString(0)),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getInt(3),
+                        cursor.getString(4),
+
+                        (cursor.getInt(5)==1)
+                );
+
+
+                foodChallengeList.add(foodChallenge);
+            } while (cursor.moveToNext());
+        }
+
+
+        return foodChallengeList;
+    }
+
+    public List<FoodChallenge> getFoodChallengeByLevel(int level) {
+        List<FoodChallenge> foodChallengeList = new ArrayList<FoodChallenge>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_FOOD_CHALLENGES + " WHERE " + KEY_LEVEL + " = " + level;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                FoodChallenge foodChallenge = new FoodChallenge(
+                        Integer.parseInt(cursor.getString(0)),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getInt(3),
+                        cursor.getString(4),
+
+                        (cursor.getInt(5)==1)
+                );
+
+
+                foodChallengeList.add(foodChallenge);
+            } while (cursor.moveToNext());
+        }
+
+
+        return foodChallengeList;
+    }
+
+
+    public int getFoodChallengeCount() {
+        String countQuery = "SELECT  * FROM " + TABLE_FOOD_CHALLENGES;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        cursor.close();
+
+        // return count
+        return cursor.getCount();
+    }
+
+    public int updateFoodChallenge(FoodChallenge foodChallenge) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_NAME, foodChallenge.getName());
+        values.put(KEY_DESCRIPTION, foodChallenge.getDescription());
+        values.put(KEY_LEVEL, foodChallenge.getLevel());
+
+        values.put(KEY_COMPLETED, foodChallenge.getCompleted());
+
+        values.put(KEY_IMAGE, foodChallenge.getImage());
+
+
+        // updating row
+        return db.update(TABLE_FOOD_CHALLENGES, values, KEY_ID + " = ?",
+                new String[]{String.valueOf(foodChallenge.getId())});
+    }
+
 
     public void deleteAll() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_FITNESS_CHALLENGES);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FOOD_CHALLENGES);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SETTINGS);
 
         // Create tables again

@@ -31,14 +31,14 @@ public class SingleFitnessActivity extends YouTubeBaseActivity
                 getFragmentManager()
                         .findFragmentById(R.id.yt_fitness_activity_video);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         final FitnessChallenge fitnessChallenge = this.getIntent().getExtras().getParcelable("challenge");
         youtube_video_id = fitnessChallenge.getVideo();

@@ -107,6 +107,11 @@
             android:label="@string/title_activity_single_fitness"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FitnessChallengeList"></activity>
+        <activity
+            android:name=".SingleFoodActivity"
+            android:label="@string/title_activity_single_food"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FoodChallengeList"></activity>
     </application>
 
 </manifest>

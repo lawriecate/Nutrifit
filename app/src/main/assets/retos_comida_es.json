@@ -1,38 +1,40 @@
-[
- {
-   "challenge": "Come 5 piezas de fruta hoy",
+{
+  "challenges": [
+
+    {
+   "name": "Come 5 piezas de fruta hoy",
    "level": 1,
    "image": "http://weknowyourdreams.com/images/fruit/fruit-01.jpg",
    "description": "Las frutas contienen azúcares naturales y ayudan a mantener su energía y luchar contra su apetito cuando se comen durante todo el día. Una manzana contiene sólo 50 cals, pero tres galletas de chocolate podría contener 300!"
  },
  {
-   "challenge": "No come ningun chocolate hoy",
+   "name": "No come ningun chocolate hoy",
    "level": 2,
    "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
    "description": "El chocolate contiene gran cantidad de azúcares y grasas y es altamente adictivo. Coma un bocadillo sin procesar en su lugar como fruta o algunas nueces. Si usted no puede dar para arriba el chocolate, intento que come chocolate oscuro en lugar de otro."
  },
  {
-   "challenge": "No bebes refrescos hoy",
+   "name": "No bebes refrescos hoy",
    "level": 1,
    "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
    "description": "Las bebidas efervescentes tienen un nivel extremadamente alto de azúcares y son extremadamente perjudiciales para su cuerpo. Trate de beber agua con sabor a fruta o una pequeña cantidad de zumo de fruta en su lugar. Mejor aún beber agua!"
  },
  {
-   "challenge": "Hoy cocinate tu propia cena",
+   "name": "Hoy cocinate tu propia cena",
    "level": 3,
    "image": "http://www.healthyeatingaustralia.com/wp-content/uploads/2015/04/healthy-cooking.jpg",
    "description": "Cocinar su propia comida es importante para evitar los alimentos procesados que contienen altas cantidades de azúcar, sal y saborizantes."
  },
  {
-   "challenge": "No bebes un café con azucar añadido",
+   "name": "No bebes un café con azucar añadido",
    "level": 2,
    "image": "http://www.takepart.com/sites/default/files/styles/large/public/Starbucks_0.jpg",
    "description": "Muchas bebidas vendidas por cadenas de café tienen tantas calorías como una sola comida - elegir las opciones más pequeñas o mejor aún elegir un Americano."
  },
  {
-   "challenge": "Como una banana en lugar de tu bocadillo normal",
+   "name": "Como una banana en lugar de tu bocadillo normal",
    "level": 1,
    "image": "http://blog.jiji.ng/wp-content/uploads/2015/08/BananaSmile.png",
    "description": "Las frutas amarillas curvas son altas en \"potasio y pectina, una forma de fibra\", dijo Laura Flores, una nutricionista de San Diego. También pueden ser una buena manera de obtener magnesio y vitaminas C y B6."
  }
-]
+]}

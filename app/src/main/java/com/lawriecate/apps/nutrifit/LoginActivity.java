@@ -316,8 +316,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        openMainMenu();
-        /*if (mAuthTask != null) {
+       // openMainMenu();
+        if (mAuthTask != null) {
             return;
         }
         View focusView = null;
@@ -339,7 +339,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password, LoginActivity.this);
             mAuthTask.execute((Void) null);
-        }*/
+        }
     }
 
     private void openMainMenu() {

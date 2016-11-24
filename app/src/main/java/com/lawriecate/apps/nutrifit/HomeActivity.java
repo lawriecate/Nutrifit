@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent mainIntent = new Intent(HomeActivity.this, MenuMapas.class);
+                Intent mainIntent = new Intent(HomeActivity.this, FoodChallengeList.class);
                 HomeActivity.this.startActivity(mainIntent);
             }
         });

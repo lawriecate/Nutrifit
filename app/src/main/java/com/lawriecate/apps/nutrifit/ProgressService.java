@@ -101,6 +101,40 @@ public class ProgressService {
             db.addFitnessChallenge(fitnessChallengeArrayList.get(i));
         }
 
+
+        final ArrayList<FoodChallenge> foodChallengeArrayList = new ArrayList<>();
+
+        try {
+            // Load data
+            String jsonString = readFile("retos_comida_es.json");
+            JSONObject json = new JSONObject(jsonString);
+            JSONArray challenges = json.getJSONArray("challenges");
+
+            // Get Recipe objects from data
+            for(int i = 0; i < challenges.length(); i++){
+                Log.d("JSON",challenges.getJSONObject(i).getString("name"));
+
+                FoodChallenge foodChallenge = new FoodChallenge(
+                        0,
+                        challenges.getJSONObject(i).getString("name"),
+                        challenges.getJSONObject(i).getString("description"),
+                        challenges.getJSONObject(i).getInt("level"),
+                        challenges.getJSONObject(i).getString("image"),
+
+                        false
+                );
+
+                foodChallengeArrayList.add(foodChallenge);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+        for(int i = 0; i < foodChallengeArrayList.size(); i++) {
+            db.addFoodChallenge(foodChallengeArrayList.get(i));
+        }
+
     }
 
     private String readFile(String filename) {

@@ -125,4 +125,6 @@
     <string name="faq">FAQ</string>
     <string name="title_activity_single_fitness">SingleFitnessActivity</string>
     <string name="thumbnail">Thumbnail</string>
+    <string name="title_activity_single_food">Food Challenge</string>
+    <string name="fitness_map">Fitness Challenge Map</string>
 </resources>

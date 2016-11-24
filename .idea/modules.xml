@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nutrifit.iml" filepath="$PROJECT_DIR$/Nutrifit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lawrie-nutrifit-prototype-647d9da13915.iml" filepath="$PROJECT_DIR$/lawrie-nutrifit-prototype-647d9da13915.iml" />
     </modules>
   </component>
 </project>
