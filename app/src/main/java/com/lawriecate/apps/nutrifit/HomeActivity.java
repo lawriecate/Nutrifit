@@ -17,7 +17,9 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.common.util.concurrent.SettableFuture;
 import com.google.firebase.auth.FirebaseAuth;
+import com.unity3d.player.*;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -107,6 +109,47 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        Button settingsButton = (Button) findViewById(R.id.settings_button);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent mainIntent = new Intent(HomeActivity.this, SettingsActivity.class);
+                HomeActivity.this.startActivity(mainIntent);
+
+            }
+        });
+
+        Button sugarCalcButton = (Button) findViewById(R.id.sugar_calc_button);
+        sugarCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent mainIntent = new Intent(HomeActivity.this, SugarCalculatorActivity.class);
+                HomeActivity.this.startActivity(mainIntent);
+
+            }
+        });
+
+        Button fitnessMapBtn = (Button) findViewById(R.id.show_map_button);
+        fitnessMapBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(HomeActivity.this, MenuMapas.class);
+                HomeActivity.this.startActivity(mainIntent);
+            }
+        });
+
+        Button vrBtn = (Button) findViewById(R.id.show_vr);
+        vrBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, com.lawriecate.apps.nutrifit.UnityPlayerNativeActivity.class));
+            }
+        });
+
         SeekBar seekBar = (SeekBar) findViewById(R.id.levelSeekBar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -146,7 +189,9 @@ public class HomeActivity extends AppCompatActivity {
     public void onRestart()
     {
         super.onRestart();
-    updatePoints();
+        updatePoints();
     }
+
+
 
 }

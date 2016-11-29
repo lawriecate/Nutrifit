@@ -15,3 +15,6 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keep class bitter.jnibridge.* { *; }
+-keep class com.unity3d.* { *; }
+-keep class org.fmod.* { *; }

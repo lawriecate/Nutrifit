@@ -32,4 +32,10 @@
     <string name="currentpoints">Estado de puntaje actual está aquí</string>
     <string name="home">Inicio</string>
     <string name="progress">Progreso</string>
+    <string name="tools">Tools</string>
+    <string name="title_sugar_calculator">Sugar Calculator</string>
+    <string name="title_fitness_map">Map</string>
+    <string name="sugar_calculator">Sugar Calculator</string>
+    <string name="add_item">Add Item</string>
+    <string name="settings">Settings</string>
 </resources>

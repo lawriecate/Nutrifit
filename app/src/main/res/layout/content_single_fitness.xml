@@ -39,10 +39,16 @@
 
         <fragment
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="325dp"
             android:name="com.google.android.youtube.player.YouTubePlayerFragment"
             android:id="@+id/yt_fitness_activity_video"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="@string/button_do_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/do_challenge_button" />
     </LinearLayout>
 </RelativeLayout>

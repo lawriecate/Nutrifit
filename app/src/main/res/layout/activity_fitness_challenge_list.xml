@@ -15,12 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:text="@string/fitness_map"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fitness_map_button" />
-
         <ListView
             android:id="@+id/fitness_challenge_list_view"
             android:layout_height="match_parent"

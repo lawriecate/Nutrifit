@@ -42,14 +42,6 @@ public class FitnessChallengeList extends AppCompatActivity {
 
         });
 
-        Button fitnessMapBtn = (Button) findViewById(R.id.fitness_map_button);
-        fitnessMapBtn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent mainIntent = new Intent(FitnessChallengeList.this, MenuMapas.class);
-                FitnessChallengeList.this.startActivity(mainIntent);
-            }
-        });
     }
 }

@@ -26,6 +26,12 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:id="@+id/settings_button" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/faq"
                 android:id="@+id/faq_button" />
 
@@ -72,67 +78,150 @@
             android:fontFamily="sans-serif-medium"
             android:textSize="36sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/challenges"
-            android:id="@+id/textView3" />
-
-        <LinearLayout
-            android:orientation="horizontal"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="39dp"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView"
-                android:src="@drawable/apple"
-                android:padding="2dp" />
-
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_activity_food_challenge"
-                android:id="@+id/food_challenge_button"
-                />
-        </LinearLayout>
+                android:orientation="vertical" >
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/challenges"
+                    android:id="@+id/textView3" />
 
-            <ImageView
-                android:layout_width="39dp"
-                android:layout_height="match_parent"
-                android:id="@+id/imageView2"
-                android:src="@drawable/fitness"
-                android:padding="2dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1" >
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_activity_fit_challenge"
-                android:id="@+id/fitness_challenge_button" />
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/fitness"
+                        android:padding="2dp" />
 
-        </LinearLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_activity_fit_challenge"
+                        android:id="@+id/fitness_challenge_button" />
 
-        <TextView
-            android:text="Level"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9" />
+                </LinearLayout>
 
-        <SeekBar
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="2"
-            android:progress="0"
-            android:id="@+id/levelSeekBar"
-            android:layout_weight="1" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/apple"
+                        android:padding="2dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_activity_food_challenge"
+                        android:id="@+id/food_challenge_button"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_calculator"
+                        android:padding="2dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_sugar_calculator"
+                        android:id="@+id/sugar_calc_button"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tools"
+                    android:id="@+id/textView3" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_map"
+                        android:padding="2dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_fitness_map"
+                        android:id="@+id/show_map_button"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageViewVr"
+                        android:src="@drawable/ic_map"
+                        android:padding="2dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_vr_challenge"
+                        android:id="@+id/show_vr"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:text="Level (for demonstration purposes only)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" />
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="2"
+                    android:progress="0"
+                    android:id="@+id/levelSeekBar"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
     </LinearLayout>
 </RelativeLayout>

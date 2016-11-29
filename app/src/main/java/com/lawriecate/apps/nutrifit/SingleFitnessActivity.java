@@ -1,11 +1,13 @@
 package com.lawriecate.apps.nutrifit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -65,6 +67,17 @@ public class SingleFitnessActivity extends YouTubeBaseActivity
         });
 
         fragment.initialize(API_KEY, this);
+
+        Button openMotionTestBtn = (Button) findViewById(R.id.do_challenge_button);
+        openMotionTestBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SingleFitnessActivity.this, ChallengeMotion.class);
+                intent.putExtra("challenge", fitnessChallenge);
+                startActivity(intent);
+
+            }
+        });
     }
 
 

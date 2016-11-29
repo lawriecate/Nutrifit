@@ -1,40 +1,66 @@
 {
-  "challenges": [
+  "challenges":
 
-    {
-   "name": "Come 5 piezas de fruta hoy",
-   "level": 1,
-   "image": "http://weknowyourdreams.com/images/fruit/fruit-01.jpg",
-   "description": "Las frutas contienen azúcares naturales y ayudan a mantener su energía y luchar contra su apetito cuando se comen durante todo el día. Una manzana contiene sólo 50 cals, pero tres galletas de chocolate podría contener 300!"
- },
- {
-   "name": "No come ningun chocolate hoy",
-   "level": 2,
-   "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
-   "description": "El chocolate contiene gran cantidad de azúcares y grasas y es altamente adictivo. Coma un bocadillo sin procesar en su lugar como fruta o algunas nueces. Si usted no puede dar para arriba el chocolate, intento que come chocolate oscuro en lugar de otro."
- },
- {
-   "name": "No bebes refrescos hoy",
-   "level": 1,
-   "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
-   "description": "Las bebidas efervescentes tienen un nivel extremadamente alto de azúcares y son extremadamente perjudiciales para su cuerpo. Trate de beber agua con sabor a fruta o una pequeña cantidad de zumo de fruta en su lugar. Mejor aún beber agua!"
- },
- {
-   "name": "Hoy cocinate tu propia cena",
-   "level": 3,
-   "image": "http://www.healthyeatingaustralia.com/wp-content/uploads/2015/04/healthy-cooking.jpg",
-   "description": "Cocinar su propia comida es importante para evitar los alimentos procesados que contienen altas cantidades de azúcar, sal y saborizantes."
- },
- {
-   "name": "No bebes un café con azucar añadido",
-   "level": 2,
-   "image": "http://www.takepart.com/sites/default/files/styles/large/public/Starbucks_0.jpg",
-   "description": "Muchas bebidas vendidas por cadenas de café tienen tantas calorías como una sola comida - elegir las opciones más pequeñas o mejor aún elegir un Americano."
- },
- {
-   "name": "Como una banana en lugar de tu bocadillo normal",
-   "level": 1,
-   "image": "http://blog.jiji.ng/wp-content/uploads/2015/08/BananaSmile.png",
-   "description": "Las frutas amarillas curvas son altas en \"potasio y pectina, una forma de fibra\", dijo Laura Flores, una nutricionista de San Diego. También pueden ser una buena manera de obtener magnesio y vitaminas C y B6."
- }
-]}
+    [
+      {
+        "name": "Logré consumir 5 porciones de fruta y verdura hoy",
+        "level": 1,
+        "image": "http://weknowyourdreams.com/images/fruit/fruit-01.jpg",
+        "description": "Frutas y verduras son fuente esencial de vitaminas y minerales, claves en el buen funcionamiento del cuerpo. Son un snack ideal para combatir el hambre durante el déa."
+      },
+      {
+        "name": "No comí chocolates hoy",
+        "level": 2,
+        "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
+        "description": "Los chocolates suelen ser altos en azúcar y grasa saturada, puede ser ocasionalmente consumido en cantidades pequeñas junto con otros snacks más saludables como nueces y frutas; se recomienda preferir chocolate oscuro rico en cacao."
+      },
+      {
+        "name": "No bebí refresco hoy.",
+        "level": 3,
+        "image": "http://kingofwallpapers.com/sugar/sugar-006.jpg",
+        "description": "Los refrescos contienen un nivel extremadamente alto de azúcares, que puede se daéino para la salud al estar relacionado con ganancia de peso, riesgo de diabetes y problemas dentales. El agua natural o agua con fruta sin azúcar es mucha mejor opción, ¡mantente hidratad@!"
+      },
+      {
+        "name": "Hoy cociné mis comidas",
+        "level": 3,
+        "image": "http://www.guiainfantil.com/uploads/Familia/cocinarfamilia-pe.jpg",
+        "description": "Cocinar su propia comida es importante para evitar los alimentos procesados que contienen altas cantidades de azúcar, sal y saborizantes."
+      },
+      {
+        "name": "Mi café del día fue sin azúcar añadido",
+        "level": 2,
+        "image": "http://www.takepart.com/sites/default/files/styles/large/public/Starbucks_0.jpg",
+        "description": "Muchas bebidas vendidas por cadenas de café tienen tantas calorías como una sola comida - es preferible elegir las opciones más pequeñas o mejor aún, elegir un Americano."
+      },
+      {
+        "name": "Como un plátano en lugar de tu bocadillo normal",
+        "level": 1,
+        "image": "http://blog.jiji.ng/wp-content/uploads/2015/08/BananaSmile.png",
+        "description": "Además de ser ricas en potasio y vitaminas del complejo B, una sola pieza de plátano equivale a dos porciones de fruta, ¡una gran ventaja para lograr tus cinco al día!"
+      },
+      {
+        "name": "Evité los embutidos",
+        "level": 2,
+        "image": "http://www.webconsultas.com/sites/default/files/styles/encabezado_articulo/public/migrated/embutidos.jpg?itok=vfNfJSIS",
+        "description": "Alimentos como chorizo, salchicha, jamón serrano y otros embutidos y carnes procesadas son altas en grasa saturada y contienen mucho sodio. Prefiere cortes delgados de carne magra."
+      },
+      {
+        "name": "Tomé 8 vasos de agua natural",
+        "level": 1,
+        "image": "http://drsusanshealthyliving.com/wp-content/uploads/2014/08/fruit_198106940.jpg",
+        "description": "8 vasos equivale a dos litros al día, te recomendamos llevar un termo o envase siempre contigo. Para un poco de sabor, usa sobres de té frutal o trozos de fruta congelada y hierbas como menta/yerbabuena"
+      },
+      {
+        "name": "Mi comida de hoy incluyó todos los grupos de alimentos",
+        "level": 3,
+        "image": "http://www.siamhealth.net/public_html/images/goodhealth/215l.jpg",
+        "description": "Siguiendo el Plato del Bien Comer, una comida completa debe contener una porción de cereales, una porcién de proteína y una gran porción de frutas y verduras para que tu dieta sea completa."
+      },
+      {
+        "name": "Hoy no consumé snacks empaquetados",
+        "level": 1,
+        "image": "https://s-media-cache-ak0.pinimg.com/originals/aa/8d/d8/aa8dd8e1c478f3b31492b9c3a33e658b.jpg",
+        "description": "Los snacks empaquetados o ultraprocesados suelen ser altos en azúcar, grasa y sodio, éno es la opción más saludable! Elabora tus snacks en casa."
+      }
+    ]
+}
